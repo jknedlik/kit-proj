@@ -1,0 +1,10 @@
+all.manager 192.168.1.200 1095
+all.role server
+
+all.pidpath /tmp/
+all.adminpath /tmp/
+cms.space 1k 2k
+
+all.export / r/w
+#com.dfs redirect immed
+cms.delay servers 1 startup 10

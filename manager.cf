@@ -1,0 +1,13 @@
+all.manager 192.168.1.200 1095
+all.role manager
+
+all.pidpath /tmp/
+all.adminpath /tmp/
+oss.localroot /home/vagrant/shfs
+#ofs.localroot /tmp/xrdcptest
+
+all.export / r/w
+cms.delay startup 1
+
+ofs.cmslib /usr/lib/af-xrootd/RedirPlugin/libRedirPlugin.so
+Redir.prefix 192.168.1.202:1094

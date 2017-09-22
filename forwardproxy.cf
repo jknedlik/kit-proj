@@ -1,0 +1,16 @@
+xrd.port 1094
+pss.origin =
+
+ofs.osslib /usr/lib/af-xrootd/libXrdPss.so
+pss.cachelib /usr/lib/af-xrootd/libXrdFileCache-4.so
+pfc.ram  1G
+
+oss.localroot /home/vagrant/shfs
+pss.cache pagesize 1M sfiles on size 8G
+all.export /xroot:/
+xrd.timeout idle 10
+
+all.export /xroot:/
+ofs.persist off
+all.pidpath /tmp/
+all.adminpath /tmp/
